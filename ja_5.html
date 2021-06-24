@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>javascript</title>
+    <style type="text/css">
+      .cr{
+        width: 200px;
+        height: 200px;
+        border-radius: 50%;
+        float: left;
+        margin: 20px;
+      }
+      #red-cr{
+        background-color: red;
+      }
+      #blue-cr{
+        background-color: blue;
+      }
+      #yellow-cr{
+        background-color: yellow;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="red-cr" class="cr"></div>
+
+    <div id="blue-cr" class="cr"></div>
+
+    <div id="yellow-cr" class="cr"></div>
+    <!-- クリックするを消える -->
+    <script type="text/javascript">
+      document.getElementById("red-cr").onclick = function(){
+        document.getElementById("red-cr").style.display = "none";
+      }
+
+      document.getElementById("blue-cr").onclick = function(){
+        document.getElementById("blue-cr").style.display = "none";
+      }
+      
+      document.getElementById("yellow-cr").onclick = function(){
+        document.getElementById("yellow-cr").style.display = "none";
+      }
+    </script>
+  </body>
+</html>

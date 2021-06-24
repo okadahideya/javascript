@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>javascript</title>
+    <style type="text/css">
+
+    </style>
+  </head>
+  <body>
+    <p><input type="text" id="info">ここに名前を入れてください</p>
+    <button id="subbu">送信する</button>
+
+    <p id="new-me"></p>
+
+    <script type="text/javascript">
+    //変数
+      // var x = 5;
+      // alert(x);
+      document.getElementById("subbu").onclick = function(){
+        var name = ""; //文字列を指定
+        name = document.getElementById("info").value;
+        document.getElementById("new-me").innerHTML = name + "さん、ログインしました"
+      }
+    </script>
+  </body>
+</html>

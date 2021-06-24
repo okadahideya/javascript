@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>javascript</title>
+  </head>
+  <body>
+    <p id="text">Hello!!</p>
+    <button id="mybutton">change Text</button>
+
+    <script type="text/javascript">
+      document.getElementById("mybutton").onclick = function(){
+        alert("ボタンがクリックされました");
+        document.getElementById("text").innerHTML = "クリックしましたね"
+      }
+    </script>
+    
+    <p id="sepa">JavaScriptは</p>
+    <button id="sebu">追記する！</button>
+    <script type="text/javascript">
+      document.getElementById("sebu").onclick = function(){
+        // document.getElementById("sepa").innerHTML =
+        //   document.getElementById("sepa").innerHTML = "ブラウザでもサーバー再度でも動作する";
+        
+        //下記は簡略化した
+      document.getElementById("sepa").innerHTML += "ブラウザでもサーバー再度でも動作する";
+      }
+    </script>
+  </body>
+</html>

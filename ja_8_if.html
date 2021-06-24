@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>javascript</title>
+    <style type="text/css">
+
+    </style>
+  </head>
+  <body>
+
+    <p>パスワードを入れてください</p>
+    <p><input type="text" id="pass"></p>
+    <p><button id="but">チャックする</button></p>
+
+    <script type="text/javascript">
+      document.getElementById("but").onclick = function(){
+        var passWord = document.getElementById("pass").value;
+        var pass = "abcd";
+
+        if(passWord == pass){
+          alert("OK");
+        }else{
+          alert("NG");
+        }
+      }
+
+      // var x = 1;
+
+      // if(x == 1){
+      //   alert("Xは１です");
+      // }else{
+      //   alert("Xは１ではありません");
+      // }
+    </script>
+  </body>
+</html>
