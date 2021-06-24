@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>javascript</title>
+    <style type="text/css">
+
+    </style>
+  </head>
+  <body>
+
+    <div id="tweet-div"></div>
+    <script type="text/javascript">
+      // for(var i=0; i<5; i++){
+      //   alert(i);
+      // }
+
+      var tw = ["mo","co","do","po"];
+      var tweets = "";
+
+      for(var i=0; i<tw.length; i++){
+        // alert(tw[i]);
+        tweets = tweets + "<p>" + tw[i] + "</P>";
+      }
+      document.getElementById("tweet-div").innerHTML = tweets;
+    </script>
+  </body>
+</html>
